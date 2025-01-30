@@ -12,6 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Execute build commands or scripts"
+                python3 test.py
                 //sh 'your-build-command-or-script.sh'
             }
         }
